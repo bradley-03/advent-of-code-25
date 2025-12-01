@@ -22,7 +22,7 @@ function totalZeroes() {
 
   for (let instruction of instructions) {
     dialPosition = moveDial(dialPosition, instruction)
-    if (dialPosition % 100 === 0 || dialPosition % 100 === -0) {
+    if (dialPosition % 100 === 0) {
       zeroCounter++
     }
   }
