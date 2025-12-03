@@ -1,5 +1,6 @@
 const fs = require("fs")
-const input = fs.readFileSync("./input.txt", "utf8").trim()
+const path = require("path")
+const input = fs.readFileSync(path.join(__dirname, "/input.txt"), "utf8").trim()
 
 const instructions = input.split("\n")
 const defaultDialPosition = 50
